@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instagram Photo Feed</title>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/29e78a2662.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+    crossorigin="anonymous"
+  />
+</head>
+
+<body>
+
+  <!-- =========================
+       NAVBAR
+  ========================== -->
+  <nav class="navbar navbar-expand bg-body-tertiary">
+    <div class="container-fluid">
+
+      <!-- Instagram brand -->
+      <a class="navbar-brand" href="#">
+        <i class="fa-brands fa-instagram"></i> Instagram
+      </a>
+
+      <!-- Right side actions -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <!-- Create post button -->
+        <div class="d-flex ms-auto gap-3">
+          <div class="nav-item">
+            <button
+              type="button"
+              class="btn btn-success"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Create a new post
+            </button>
+          </div>
+        </div>
+
+        <!-- Settings dropdown -->
+        <div class="dropdown ms-2">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="fa-solid fa-gear"></i>
+          </button>
+
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- =========================
+       VIEW TABS (GRID / LIST)
+  ========================== -->
+  <nav class="nav nav-tabs justify-content-center">
+    <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#grid">
+      <i class="fa-solid fa-table-cells"></i>
+    </button>
+
+    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#list">
+      <i class="fa-solid fa-table-list"></i>
+    </button>
+  </nav>
+
+  <!-- =========================
+       TAB CONTENT
+  ========================== -->
+  <div class="tab-content">
+
+    <!-- =========================
+         GRID VIEW
+    ========================== -->
+    <div class="tab-pane fade show active" id="grid">
+      <div class="container mb-4">
+        <div class="row g-2">
+
+          <div class="col-sm-12 col-md-4 col-lg-4">
+            <img
+              src="https://fastly.picsum.photos/id/249/600/400.jpg?hmac=LDNrvuEgBgK-QbvMpv5QKnWmRlPevcKGEpWKuRfPySA"
+              class="img-fluid w-100"
+              alt=""
+            />
+          </div>
+
+          <div class="col-sm-12 col-md-4 col-lg-4">
+            <img
+              src="https://fastly.picsum.photos/id/982/600/400.jpg?hmac=NqiC9YWusTtS_R1WW9QhBdi5QG5rr6lhbLuwrKmIytM"
+              class="img-fluid w-100"
+              alt=""
+            />
+          </div>
+
+          <div class="col-sm-12 col-md-4 col-lg-4">
+            <img
+              src="https://fastly.picsum.photos/id/62/600/400.jpg?hmac=GxWI7cJivRMdEntglLHv2LPQwFq34DCH700U-BBjQ2Y"
+              class="img-fluid w-100"
+              alt=""
+            />
+          </div>
+
+          <div class="col-sm-12 col-md-4 col-lg-4">
+            <img
+              src="https://fastly.picsum.photos/id/818/600/400.jpg?hmac=vzEkI6vhR-ryPpN7iyoLfUoYi74efD6POx4Gpc5Q4IE"
+              class="img-fluid w-100"
+              alt=""
+            />
+          </div>
+
+          <div class="col-sm-12 col-md-4 col-lg-4">
+            <img
+              src="https://fastly.picsum.photos/id/382/600/400.jpg?hmac=Fcb4ES94JAMWNFEP8U5abTcVyU-b1v8WiGOp33YYl6o"
+              class="img-fluid w-100"
+              alt=""
+            />
+          </div>
+
+          <div class="col-sm-12 col-md-4 col-lg-4">
+            <img
+              src="https://fastly.picsum.photos/id/250/600/400.jpg?hmac=fK3xzeQSpwEr9WAtsU8lGHeKcGlLSLnQ0aJkREhPcIE"
+              class="img-fluid w-100"
+              alt=""
+            />
+          </div>
+
+          <div class="col-sm-12 col-md-4 col-lg-4">
+            <img
+              src="https://fastly.picsum.photos/id/169/600/400.jpg?hmac=DwvdSwF7pz3xMM2yqtj_EuqbjoM3ep6fHG5vwSeAumA"
+              class="img-fluid w-100"
+              alt=""
+            />
+          </div>
+
+          <div class="col-sm-12 col-md-4 col-lg-4">
+            <img
+              src="https://fastly.picsum.photos/id/469/600/400.jpg?hmac=QJ-dGX-1zbfGFdD7QzdLJI7uOdzaInNPLbU5JqeJW04"
+              class="img-fluid w-100"
+              alt=""
+            />
+          </div>
+
+          <div class="col-sm-12 col-md-4 col-lg-4">
+            <img
+              src="https://fastly.picsum.photos/id/249/600/400.jpg?hmac=LDNrvuEgBgK-QbvMpv5QKnWmRlPevcKGEpWKuRfPySA"
+              class="img-fluid w-100"
+              alt=""
+            />
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- =========================
+         LIST VIEW
+    ========================== -->
+    <div class="tab-pane" id="list">
+      <div class="d-flex flex-column align-items-center">
+
+        <div class="card my-4 col-12 col-md-8 col-lg-6">
+
+          <!-- Card header -->
+          <div class="card-header d-flex justify-content-between">
+            <div>
+              <i class="fa-brands fa-instagram"></i>
+              <strong>Post1</strong>
+            </div>
+
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </div>
+
+          <!-- Card image -->
+          <img
+            src="https://fastly.picsum.photos/id/249/600/400.jpg?hmac=LDNrvuEgBgK-QbvMpv5QKnWmRlPevcKGEpWKuRfPySA"
+            class="card-img-top"
+            alt="..."
+          />
+
+          <!-- Card body -->
+          <div class="card-body">
+
+            <!-- Post icons -->
+            <div class="card-text d-flex justify-content-between">
+              <div>
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-comment"></i>
+                <i class="fa-solid fa-retweet"></i>
+                <i class="fa-regular fa-paper-plane"></i>
+              </div>
+
+              <div>
+                <i class="fa-regular fa-bookmark"></i>
+              </div>
+            </div>
+
+            <!-- Post text -->
+            <h5 class="card-title">200 likes</h5>
+            <p class="card-text">
+              This is an example of a very good photo that you can post on instagram
+            </p>
+
+          </div>
+        </div>
+
+        <div class="card my-4 col-12 col-md-8 col-lg-6">
+
+          <!-- Card header -->
+          <div class="card-header d-flex justify-content-between">
+            <div>
+              <i class="fa-brands fa-instagram"></i>
+              <strong>Post2</strong>
+            </div>
+
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </div>
+
+          <!-- Card image -->
+          <img
+            src="https://fastly.picsum.photos/id/982/600/400.jpg?hmac=NqiC9YWusTtS_R1WW9QhBdi5QG5rr6lhbLuwrKmIytM"
+            class="card-img-top"
+            alt="..."
+          />
+
+          <!-- Card body -->
+          <div class="card-body">
+
+            <!-- Post icons -->
+            <div class="card-text d-flex justify-content-between">
+              <div>
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-comment"></i>
+                <i class="fa-solid fa-retweet"></i>
+                <i class="fa-regular fa-paper-plane"></i>
+              </div>
+
+              <div>
+                <i class="fa-regular fa-bookmark"></i>
+              </div>
+            </div>
+
+            <!-- Post text -->
+            <h5 class="card-title">200 likes</h5>
+            <p class="card-text">
+              This is an example of a very good photo that you can post on instagram
+            </p>
+
+          </div>
+        </div>
+
+        <div class="card my-4 col-12 col-md-8 col-lg-6">
+
+          <!-- Card header -->
+          <div class="card-header d-flex justify-content-between">
+            <div>
+              <i class="fa-brands fa-instagram"></i>
+              <strong>Post3</strong>
+            </div>
+
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </div>
+
+          <!-- Card image -->
+          <img
+            src="https://fastly.picsum.photos/id/62/600/400.jpg?hmac=GxWI7cJivRMdEntglLHv2LPQwFq34DCH700U-BBjQ2Y"
+            class="card-img-top"
+            alt="..."
+          />
+
+          <!-- Card body -->
+          <div class="card-body">
+
+            <!-- Post icons -->
+            <div class="card-text d-flex justify-content-between">
+              <div>
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-comment"></i>
+                <i class="fa-solid fa-retweet"></i>
+                <i class="fa-regular fa-paper-plane"></i>
+              </div>
+
+              <div>
+                <i class="fa-regular fa-bookmark"></i>
+              </div>
+            </div>
+
+            <!-- Post text -->
+            <h5 class="card-title">200 likes</h5>
+            <p class="card-text">
+              This is an example of a very good photo that you can post on instagram
+            </p>
+
+          </div>
+        </div>
+
+        <div class="card my-4 col-12 col-md-8 col-lg-6">
+
+          <!-- Card header -->
+          <div class="card-header d-flex justify-content-between">
+            <div>
+              <i class="fa-brands fa-instagram"></i>
+              <strong>Post4</strong>
+            </div>
+
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </div>
+
+          <!-- Card image -->
+          <img
+            src="https://fastly.picsum.photos/id/818/600/400.jpg?hmac=vzEkI6vhR-ryPpN7iyoLfUoYi74efD6POx4Gpc5Q4IE"
+            class="card-img-top"
+            alt="..."
+          />
+
+          <!-- Card body -->
+          <div class="card-body">
+
+            <!-- Post icons -->
+            <div class="card-text d-flex justify-content-between">
+              <div>
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-comment"></i>
+                <i class="fa-solid fa-retweet"></i>
+                <i class="fa-regular fa-paper-plane"></i>
+              </div>
+
+              <div>
+                <i class="fa-regular fa-bookmark"></i>
+              </div>
+            </div>
+
+            <!-- Post text -->
+            <h5 class="card-title">200 likes</h5>
+            <p class="card-text">
+              This is an example of a very good photo that you can post on instagram
+            </p>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- =========================
+       CREATE POST MODAL
+  ========================== -->
+  <div
+    class="modal fade"
+    id="exampleModal"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal header -->
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <label for="caption" class="form-label">Caption:</label>
+
+          <textarea
+            id="caption"
+            class="form-control"
+            placeholder="Add the caption of your post here"
+          ></textarea>
+
+          <div class="mt-3">
+            <button class="btn btn-light">
+              <i class="fa-solid fa-camera"></i>
+            </button>
+
+            <button class="btn btn-light">
+              <i class="fa-solid fa-location-dot"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"
+  ></script>
+
+</body>
+</html>
